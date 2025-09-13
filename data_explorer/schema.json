@@ -1,0 +1,1480 @@
+{
+  "shared_syncs": [
+    {
+      "id": 0,
+      "name": "table_name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "last_synchronized_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "products": [
+    {
+      "id": 0,
+      "name": "id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "is_listed",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "password",
+      "type": "TEXT",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "min_count_in_frame",
+      "type": "INT UNSIGNED",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "max_count_in_frame",
+      "type": "INT UNSIGNED",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    }
+  ],
+  "product_sizes": [
+    {
+      "id": 0,
+      "name": "id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "product_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "edge_left",
+      "type": "INT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "edge_right",
+      "type": "INT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "edge_bottom",
+      "type": "INT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "edge_top",
+      "type": "INT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 6,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 7,
+      "name": "description",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 8,
+      "name": "image_filename",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 9,
+      "name": "position",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 10,
+      "name": "is_listed",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "holes": [
+    {
+      "id": 0,
+      "name": "id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "product_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "x",
+      "type": "INT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "y",
+      "type": "INT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "mirrored_hole_id",
+      "type": "INT UNSIGNED",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 6,
+      "name": "mirror_group",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": "0",
+      "primary_key": 0
+    }
+  ],
+  "leds": [
+    {
+      "id": 0,
+      "name": "id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "product_size_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "hole_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "position",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "products_angles": [
+    {
+      "id": 0,
+      "name": "product_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "angle",
+      "type": "INT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 2
+    }
+  ],
+  "layouts": [
+    {
+      "id": 0,
+      "name": "id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "product_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "instagram_caption",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "is_mirrored",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "is_listed",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 6,
+      "name": "password",
+      "type": "TEXT",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 7,
+      "name": "created_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "sets": [
+    {
+      "id": 0,
+      "name": "id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "hsm",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "product_sizes_layouts_sets": [
+    {
+      "id": 0,
+      "name": "id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "product_size_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "layout_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "set_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "image_filename",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "is_listed",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "placement_roles": [
+    {
+      "id": 0,
+      "name": "id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "product_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "position",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "full_name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "led_color",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 6,
+      "name": "screen_color",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "name": "id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "username",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "created_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "user_permissions": [
+    {
+      "id": 0,
+      "name": "user_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 2
+    }
+  ],
+  "user_syncs": [
+    {
+      "id": 0,
+      "name": "user_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "table_name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 2
+    },
+    {
+      "id": 2,
+      "name": "last_synchronized_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "walls_sets": [
+    {
+      "id": 0,
+      "name": "wall_uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "set_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 2
+    }
+  ],
+  "climb_cache_fields": [
+    {
+      "id": 0,
+      "name": "climb_uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "ascensionist_count",
+      "type": "INT UNSIGNED",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "display_difficulty",
+      "type": "FLOAT UNSIGNED",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "quality_average",
+      "type": "FLOAT UNSIGNED",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    }
+  ],
+  "attempts": [
+    {
+      "id": 0,
+      "name": "id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "position",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "difficulty_grades": [
+    {
+      "id": 0,
+      "name": "difficulty",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "boulder_name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "route_name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "is_listed",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "climb_stats": [
+    {
+      "id": 0,
+      "name": "climb_uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "angle",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 2
+    },
+    {
+      "id": 2,
+      "name": "display_difficulty",
+      "type": "FLOAT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "benchmark_difficulty",
+      "type": "FLOAT UNSIGNED",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "ascensionist_count",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "difficulty_average",
+      "type": "FLOAT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 6,
+      "name": "quality_average",
+      "type": "FLOAT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 7,
+      "name": "fa_username",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 8,
+      "name": "fa_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "entity_uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "user_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 2
+    },
+    {
+      "id": 2,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 3
+    },
+    {
+      "id": 3,
+      "name": "is_listed",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "android_metadata": [
+    {
+      "id": 0,
+      "name": "locale",
+      "type": "TEXT",
+      "notnull": 0,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "circuits": [
+    {
+      "id": 0,
+      "name": "uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "description",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "color",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "user_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "is_public",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 6,
+      "name": "created_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 7,
+      "name": "updated_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "circuits_climbs": [
+    {
+      "id": 0,
+      "name": "circuit_uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "climb_uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 2
+    },
+    {
+      "id": 2,
+      "name": "position",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "kits": [
+    {
+      "id": 0,
+      "name": "serial_number",
+      "type": "TEXT",
+      "notnull": 0,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 0,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "is_autoconnect",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "is_listed",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "created_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "updated_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "climb_random_positions": [
+    {
+      "id": 0,
+      "name": "climb_uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "position",
+      "type": "INT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "beta_links": [
+    {
+      "id": 0,
+      "name": "climb_uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "link",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 2
+    },
+    {
+      "id": 2,
+      "name": "foreign_username",
+      "type": "TEXT",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "angle",
+      "type": "INT",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "thumbnail",
+      "type": "TEXT",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "is_listed",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 6,
+      "name": "created_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ],
+  "bids": [
+    {
+      "id": 0,
+      "name": "uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "user_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "climb_uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "angle",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "is_mirror",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "bid_count",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": "1",
+      "primary_key": 0
+    },
+    {
+      "id": 6,
+      "name": "comment",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": "''",
+      "primary_key": 0
+    },
+    {
+      "id": 7,
+      "name": "climbed_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 8,
+      "name": "created_at",
+      "type": "TEXT",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    }
+  ],
+  "climbs": [
+    {
+      "id": 0,
+      "name": "uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "layout_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "setter_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "setter_username",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "description",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": "''",
+      "primary_key": 0
+    },
+    {
+      "id": 6,
+      "name": "hsm",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 7,
+      "name": "edge_left",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 8,
+      "name": "edge_right",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 9,
+      "name": "edge_bottom",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 10,
+      "name": "edge_top",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 11,
+      "name": "angle",
+      "type": "INT",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 12,
+      "name": "frames_count",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": "1",
+      "primary_key": 0
+    },
+    {
+      "id": 13,
+      "name": "frames_pace",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": "0",
+      "primary_key": 0
+    },
+    {
+      "id": 14,
+      "name": "frames",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 15,
+      "name": "is_draft",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": "0",
+      "primary_key": 0
+    },
+    {
+      "id": 16,
+      "name": "is_listed",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 17,
+      "name": "created_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 18,
+      "name": "is_nomatch",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": "0",
+      "primary_key": 0
+    }
+  ],
+  "placements": [
+    {
+      "id": 0,
+      "name": "id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "layout_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "hole_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "set_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "default_placement_role_id",
+      "type": "INT UNSIGNED",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    }
+  ],
+  "walls": [
+    {
+      "id": 0,
+      "name": "uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "user_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "name",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "product_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "is_adjustable",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "angle",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 6,
+      "name": "layout_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 7,
+      "name": "product_size_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 8,
+      "name": "hsm",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 9,
+      "name": "serial_number",
+      "type": "TEXT",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    },
+    {
+      "id": 10,
+      "name": "created_at",
+      "type": "TEXT",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    }
+  ],
+  "ascents": [
+    {
+      "id": 0,
+      "name": "uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 1
+    },
+    {
+      "id": 1,
+      "name": "climb_uuid",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "angle",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 3,
+      "name": "is_mirror",
+      "type": "BOOLEAN",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 4,
+      "name": "user_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 5,
+      "name": "attempt_id",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 6,
+      "name": "bid_count",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": "1",
+      "primary_key": 0
+    },
+    {
+      "id": 7,
+      "name": "quality",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 8,
+      "name": "difficulty",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 9,
+      "name": "is_benchmark",
+      "type": "INT UNSIGNED",
+      "notnull": 1,
+      "default_value": "0",
+      "primary_key": 0
+    },
+    {
+      "id": 10,
+      "name": "comment",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": "''",
+      "primary_key": 0
+    },
+    {
+      "id": 11,
+      "name": "climbed_at",
+      "type": "TEXT",
+      "notnull": 1,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 12,
+      "name": "created_at",
+      "type": "TEXT",
+      "notnull": 0,
+      "default_value": "NULL",
+      "primary_key": 0
+    }
+  ],
+  "sqlite_stat1": [
+    {
+      "id": 0,
+      "name": "tbl",
+      "type": "",
+      "notnull": 0,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 1,
+      "name": "idx",
+      "type": "",
+      "notnull": 0,
+      "default_value": null,
+      "primary_key": 0
+    },
+    {
+      "id": 2,
+      "name": "stat",
+      "type": "",
+      "notnull": 0,
+      "default_value": null,
+      "primary_key": 0
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+[
+  {
+    "name": "geva shoulders #1",
+    "start_holds": [
+      {
+        "x": "4",
+        "y": "35"
+      },
+      {
+        "x": "8",
+        "y": "21"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "27"
+      }
+    ],
+    "edge_left": 40,
+    "edge_right": 140,
+    "edge_bottom": 28,
+    "edge_top": 152
+  },
+  {
+    "name": "gep\u00f8nkels",
+    "start_holds": [
+      {
+        "x": "2",
+        "y": "21"
+      },
+      {
+        "x": "25",
+        "y": "2"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "14",
+        "y": "37"
+      }
+    ],
+    "edge_left": 44,
+    "edge_right": 124,
+    "edge_bottom": 4,
+    "edge_top": 144
+  },
+  {
+    "name": "as easy as it gets",
+    "start_holds": [
+      {
+        "x": "6",
+        "y": "35"
+      },
+      {
+        "x": "6",
+        "y": "39"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "13"
+      }
+    ],
+    "edge_left": 88,
+    "edge_right": 140,
+    "edge_bottom": 40,
+    "edge_top": 152
+  },
+  {
+    "name": "as easy as it gets",
+    "start_holds": [
+      {
+        "x": "6",
+        "y": "35"
+      },
+      {
+        "x": "6",
+        "y": "39"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "13"
+      }
+    ],
+    "edge_left": 88,
+    "edge_right": 140,
+    "edge_bottom": 40,
+    "edge_top": 152
+  },
+  {
+    "name": "V00-35\u00b0",
+    "start_holds": [
+      {
+        "x": "2",
+        "y": "25"
+      },
+      {
+        "x": "4",
+        "y": "27"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "31"
+      }
+    ],
+    "edge_left": 8,
+    "edge_right": 56,
+    "edge_bottom": 8,
+    "edge_top": 152
+  },
+  {
+    "name": "Blasted",
+    "start_holds": [
+      {
+        "x": "24",
+        "y": "KB2"
+      },
+      {
+        "x": "5",
+        "y": "KB1"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "17",
+        "y": "30"
+      },
+      {
+        "x": "16",
+        "y": "27"
+      }
+    ],
+    "edge_left": 8,
+    "edge_right": 140,
+    "edge_bottom": 4,
+    "edge_top": 152
+  },
+  {
+    "name": "Kubaner in Alaska",
+    "start_holds": [
+      {
+        "x": "2",
+        "y": "3"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "17",
+        "y": "30"
+      }
+    ],
+    "edge_left": 4,
+    "edge_right": 140,
+    "edge_bottom": 4,
+    "edge_top": 152
+  },
+  {
+    "name": "cancel culture",
+    "start_holds": [
+      {
+        "x": "18",
+        "y": "KB2"
+      },
+      {
+        "x": "2",
+        "y": "13"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "19"
+      }
+    ],
+    "edge_left": 28,
+    "edge_right": 116,
+    "edge_bottom": 16,
+    "edge_top": 152
+  },
+  {
+    "name": "cancel culture",
+    "start_holds": [
+      {
+        "x": "18",
+        "y": "KB2"
+      },
+      {
+        "x": "2",
+        "y": "13"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "19"
+      }
+    ],
+    "edge_left": 28,
+    "edge_right": 116,
+    "edge_bottom": 16,
+    "edge_top": 152
+  },
+  {
+    "name": "Funky Monkey Man",
+    "start_holds": [
+      {
+        "x": "21",
+        "y": "KB1"
+      },
+      {
+        "x": "1",
+        "y": "KB1"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "41"
+      }
+    ],
+    "edge_left": 32,
+    "edge_right": 112,
+    "edge_bottom": 8,
+    "edge_top": 144
+  },
+  {
+    "name": "Fuit gummy",
+    "start_holds": [
+      {
+        "x": "21",
+        "y": "KB1"
+      },
+      {
+        "x": "2",
+        "y": "41"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "15"
+      }
+    ],
+    "edge_left": 32,
+    "edge_right": 112,
+    "edge_bottom": 24,
+    "edge_top": 152
+  },
+  {
+    "name": "The King of Spain",
+    "start_holds": [
+      {
+        "x": "3",
+        "y": "16"
+      },
+      {
+        "x": "2",
+        "y": "41"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "17",
+        "y": "26"
+      }
+    ],
+    "edge_left": 32,
+    "edge_right": 104,
+    "edge_bottom": 32,
+    "edge_top": 152
+  },
+  {
+    "name": "D001",
+    "start_holds": [
+      {
+        "x": "1",
+        "y": "22"
+      },
+      {
+        "x": "4",
+        "y": "39"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "27"
+      }
+    ],
+    "edge_left": 40,
+    "edge_right": 136,
+    "edge_bottom": 56,
+    "edge_top": 152
+  },
+  {
+    "name": "D001",
+    "start_holds": [
+      {
+        "x": "1",
+        "y": "22"
+      },
+      {
+        "x": "4",
+        "y": "39"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "27"
+      }
+    ],
+    "edge_left": 40,
+    "edge_right": 136,
+    "edge_bottom": 56,
+    "edge_top": 152
+  },
+  {
+    "name": "Han 3",
+    "start_holds": [
+      {
+        "x": "7",
+        "y": "24"
+      },
+      {
+        "x": "26",
+        "y": "31"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "29"
+      }
+    ],
+    "edge_left": 32,
+    "edge_right": 76,
+    "edge_bottom": 60,
+    "edge_top": 152
+  },
+  {
+    "name": "Pegasus",
+    "start_holds": [
+      {
+        "x": "2",
+        "y": "15"
+      },
+      {
+        "x": "4",
+        "y": "23"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "19"
+      }
+    ],
+    "edge_left": 44,
+    "edge_right": 136,
+    "edge_bottom": 28,
+    "edge_top": 152
+  },
+  {
+    "name": "Aztec",
+    "start_holds": [
+      {
+        "x": "19",
+        "y": "KB1"
+      },
+      {
+        "x": "2",
+        "y": "KB2"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "17",
+        "y": "18"
+      }
+    ],
+    "edge_left": 68,
+    "edge_right": 100,
+    "edge_bottom": 8,
+    "edge_top": 152
+  },
+  {
+    "name": "Aztec",
+    "start_holds": [
+      {
+        "x": "19",
+        "y": "KB1"
+      },
+      {
+        "x": "2",
+        "y": "KB2"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "17",
+        "y": "18"
+      }
+    ],
+    "edge_left": 68,
+    "edge_right": 100,
+    "edge_bottom": 8,
+    "edge_top": 152
+  },
+  {
+    "name": "4x4 @45deg H",
+    "start_holds": [
+      {
+        "x": "17",
+        "y": "KB1"
+      },
+      {
+        "x": "1",
+        "y": "KB1"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "17",
+        "y": "22"
+      },
+      {
+        "x": "16",
+        "y": "19"
+      }
+    ],
+    "edge_left": 56,
+    "edge_right": 96,
+    "edge_bottom": 4,
+    "edge_top": 152
+  },
+  {
+    "name": "train 1",
+    "start_holds": [
+      {
+        "x": "27",
+        "y": "KB1"
+      }
+    ],
+    "finish_holds": [
+      {
+        "x": "16",
+        "y": "13"
+      }
+    ],
+    "edge_left": 4,
+    "edge_right": 132,
+    "edge_bottom": 4,
+    "edge_top": 152
+  }
+]
