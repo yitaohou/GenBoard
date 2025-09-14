@@ -1,0 +1,17 @@
+--- Angle Frequency Distribution ---
+Angle 0°: 31 climbs
+Angle 5°: 17 climbs
+Angle 10°: 71 climbs
+Angle 15°: 121 climbs
+Angle 20°: 214 climbs
+Angle 25°: 192 climbs
+Angle 30°: 664 climbs
+Angle 35°: 223 climbs
+Angle 40°: 2302 climbs
+Angle 45°: 827 climbs
+Angle 50°: 1140 climbs
+Angle 55°: 103 climbs
+Angle 60°: 212 climbs
+Angle 65°: 9 climbs
+Angle 70°: 33 climbs
+------------------------------------
